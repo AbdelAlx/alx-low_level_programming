@@ -1,0 +1,2 @@
+#!/bin/bach
+gcc 3-main.c -o cisfun
