@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
   * more_numbers - Print 10 times numbers from 0 to 14
