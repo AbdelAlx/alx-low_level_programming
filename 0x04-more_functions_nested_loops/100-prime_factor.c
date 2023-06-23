@@ -2,10 +2,11 @@
 #include <math.h>
 
 /**
-  * main - Prints the largest prime factor 
+  * main - Prints the largest prime factor
   *
   * Return: 0
   */
+
 int main(void)
 {
 	long x, maxf;
@@ -19,7 +20,6 @@ int main(void)
 			maxf = number / x;
 		}
 	}
-
 	printf("%ld\n", maxf);
 
 	return (0);
