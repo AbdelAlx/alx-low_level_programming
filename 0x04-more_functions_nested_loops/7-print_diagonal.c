@@ -1,33 +1,29 @@
 #include "main.h"
 
 /**
-  * print_triangle - Prints a trianglr
-  * @size: Triangle size
+  * print_diagonal - Diagonal Line
+  * @n: nbr lines
   *
-  * Return: empty
+  * Return: N.A
   */
-void print_triangle(int size)
+void print_diagonal(int n)
 {
-	int x, y, z;
+	int x, y;
 
-	if (size <= 0)
+	if (n <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (x = 0; x < size; x++)
+		for (x = 0; x < n; x++)
 		{
-			for (y = size - x; y > 1; y--)
+			for (y = 0; y < x; y++)
 			{
 				_putchar(32);
 			}
 
-			for (z = 0; z <= x; z++)
-			{
-				_putchar(35);
-			}
-
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
