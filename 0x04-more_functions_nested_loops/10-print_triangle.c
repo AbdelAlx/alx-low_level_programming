@@ -1,24 +1,25 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-  * print_triangle - Prints a triangle 
-  * @n: Triancle size
+  * print_triangle - Prints a triangle
+  * @size: Triangle size
   *
   * Return: N.A
   */
-void print_triangle(int n)
+
+void print_triangle(int size)
 {
 	int x, y, z;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (x = 0; x < n; x++)
+		for (x = 0; x < size; x++)
 		{
-			for (y = n - x; y > 1; y--)
+			for (y = size - x; y > 1; y--)
 			{
 				_putchar(32);
 			}
