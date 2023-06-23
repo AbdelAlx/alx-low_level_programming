@@ -1,30 +1,33 @@
 #include "main.h"
 
 /**
-  * print_diagonal -  diagonal lines according parameter
-  * @n: diagonal lines occurence
+  * print_triangle - Prints a trianglr
+  * @size: Triangle size
   *
-  * Return: N.A
+  * Return: empty
   */
-
-void print_diagonal(int n)
+void print_triangle(int size)
 {
-	int x, y;
+	int x, y, z;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (x = 0; x < n; x++)
+		for (x = 0; x < size; x++)
 		{
-			for (y = 0; y < x; y++)
+			for (y = size - x; y > 1; y--)
 			{
 				_putchar(32);
 			}
 
-			_putchar(92);
+			for (z = 0; z <= x; z++)
+			{
+				_putchar(35);
+			}
+
 			_putchar('\n');
 		}
 	}
