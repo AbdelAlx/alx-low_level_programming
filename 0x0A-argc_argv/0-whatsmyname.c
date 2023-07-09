@@ -2,14 +2,13 @@
 #include <stdio.h>
 
 /**
- * _whatsmyname - return the name of the program
+ * main - return the name of the program
  * @argc: arguments number
- * @argv : arguments Vector
+ * @argv: arguments Vector
  *
- * return :0
+ * return: always return 0
  */
-
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
 	printf("%s \n", argv[0]);
 	return (0);
