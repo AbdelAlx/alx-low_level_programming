@@ -39,9 +39,9 @@ int main(int argc, char *argv[])
 {
 	int num1, num2;
 
-	if (argc > 3)
+	if (argc > 3 || argc < 3)
 	{
-		printf("error, more than 2 numbers are given as an argument -> only 2 numbers are expected\n");
+		printf("Error\n");
 		exit(0);
 	}
 	num1 = _atoi(argv[1]);
