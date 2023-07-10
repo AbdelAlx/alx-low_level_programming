@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - prints all arguments
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+	int digit, i, sig;
+
+	i = 0;
+	sig = 0;
+
+	while (argv[1][i] != '\0')
+	{
+		if (argv[1][i] == '-')
+		{
+			sig = 1;
+			i++;
+		}
+		digit = digit*10 + argv[1][i]; 
+		i++;
+	}
+	printf("%d\n",argc);
+	printf("%d\n",digit);
+	printf("%d\n",sig);
+
+	return (0);
+}
